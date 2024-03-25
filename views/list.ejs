@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST</title>
+</head>
+<body>
+        <h1><%= date %></h1>
+        <h4>Menu</h4>
+        <ul>
+            <li>Softy</li>
+            <li>Burger</li>
+            <li>Pizza</li>
+            <% for(let i =0;i<newlistitem.length;i++){ %>
+            <li><%= newlistitem[i] %></li>
+
+            <% }%> 
+
+        </ul>
+      <form action="/" method="post"> 
+        <input type="text" name="taskInput" placeholder="Enter task here..."/> 
+        <button type="submit" autocomplete="off">Add</button>
+      </form>
+</body>
+</html>
